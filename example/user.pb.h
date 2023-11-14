@@ -181,9 +181,25 @@ class ResultCode :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kErrcodeFieldNumber = 1,
     kErrmsgFieldNumber = 2,
+    kErrcodeFieldNumber = 1,
   };
+  // string errmsg = 2;
+  void clear_errmsg();
+  const std::string& errmsg() const;
+  void set_errmsg(const std::string& value);
+  void set_errmsg(std::string&& value);
+  void set_errmsg(const char* value);
+  void set_errmsg(const char* value, size_t size);
+  std::string* mutable_errmsg();
+  std::string* release_errmsg();
+  void set_allocated_errmsg(std::string* errmsg);
+  private:
+  const std::string& _internal_errmsg() const;
+  void _internal_set_errmsg(const std::string& value);
+  std::string* _internal_mutable_errmsg();
+  public:
+
   // int32 errcode = 1;
   void clear_errcode();
   ::PROTOBUF_NAMESPACE_ID::int32 errcode() const;
@@ -193,22 +209,13 @@ class ResultCode :
   void _internal_set_errcode(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 errmsg = 2;
-  void clear_errmsg();
-  ::PROTOBUF_NAMESPACE_ID::int32 errmsg() const;
-  void set_errmsg(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_errmsg() const;
-  void _internal_set_errmsg(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:fixbug.ResultCode)
  private:
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr errmsg_;
   ::PROTOBUF_NAMESPACE_ID::int32 errcode_;
-  ::PROTOBUF_NAMESPACE_ID::int32 errmsg_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_user_2eproto;
 };
@@ -600,24 +607,64 @@ inline void ResultCode::set_errcode(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:fixbug.ResultCode.errcode)
 }
 
-// int32 errmsg = 2;
+// string errmsg = 2;
 inline void ResultCode::clear_errmsg() {
-  errmsg_ = 0;
+  errmsg_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 ResultCode::_internal_errmsg() const {
-  return errmsg_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 ResultCode::errmsg() const {
+inline const std::string& ResultCode::errmsg() const {
   // @@protoc_insertion_point(field_get:fixbug.ResultCode.errmsg)
   return _internal_errmsg();
 }
-inline void ResultCode::_internal_set_errmsg(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  errmsg_ = value;
-}
-inline void ResultCode::set_errmsg(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ResultCode::set_errmsg(const std::string& value) {
   _internal_set_errmsg(value);
   // @@protoc_insertion_point(field_set:fixbug.ResultCode.errmsg)
+}
+inline std::string* ResultCode::mutable_errmsg() {
+  // @@protoc_insertion_point(field_mutable:fixbug.ResultCode.errmsg)
+  return _internal_mutable_errmsg();
+}
+inline const std::string& ResultCode::_internal_errmsg() const {
+  return errmsg_.GetNoArena();
+}
+inline void ResultCode::_internal_set_errmsg(const std::string& value) {
+  
+  errmsg_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+}
+inline void ResultCode::set_errmsg(std::string&& value) {
+  
+  errmsg_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:fixbug.ResultCode.errmsg)
+}
+inline void ResultCode::set_errmsg(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  errmsg_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:fixbug.ResultCode.errmsg)
+}
+inline void ResultCode::set_errmsg(const char* value, size_t size) {
+  
+  errmsg_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:fixbug.ResultCode.errmsg)
+}
+inline std::string* ResultCode::_internal_mutable_errmsg() {
+  
+  return errmsg_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ResultCode::release_errmsg() {
+  // @@protoc_insertion_point(field_release:fixbug.ResultCode.errmsg)
+  
+  return errmsg_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ResultCode::set_allocated_errmsg(std::string* errmsg) {
+  if (errmsg != nullptr) {
+    
+  } else {
+    
+  }
+  errmsg_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), errmsg);
+  // @@protoc_insertion_point(field_set_allocated:fixbug.ResultCode.errmsg)
 }
 
 // -------------------------------------------------------------------

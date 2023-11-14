@@ -113,7 +113,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 
 const char descriptor_table_protodef_user_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\nuser.proto\022\006fixbug\"-\n\nResultCode\022\017\n\007er"
-  "rcode\030\001 \001(\005\022\016\n\006errmsg\030\002 \001(\005\")\n\014LoginRequ"
+  "rcode\030\001 \001(\005\022\016\n\006errmsg\030\002 \001(\t\")\n\014LoginRequ"
   "est\022\014\n\004name\030\001 \001(\014\022\013\n\003pwd\030\002 \001(\014\"D\n\rLoginR"
   "esponse\022\"\n\006result\030\001 \001(\0132\022.fixbug.ResultC"
   "ode\022\017\n\007success\030\002 \001(\0102F\n\016UserServiceRpc\0224"
@@ -157,16 +157,18 @@ ResultCode::ResultCode(const ResultCode& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&errcode_, &from.errcode_,
-    static_cast<size_t>(reinterpret_cast<char*>(&errmsg_) -
-    reinterpret_cast<char*>(&errcode_)) + sizeof(errmsg_));
+  errmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_errmsg().empty()) {
+    errmsg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.errmsg_);
+  }
+  errcode_ = from.errcode_;
   // @@protoc_insertion_point(copy_constructor:fixbug.ResultCode)
 }
 
 void ResultCode::SharedCtor() {
-  ::memset(&errcode_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&errmsg_) -
-      reinterpret_cast<char*>(&errcode_)) + sizeof(errmsg_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ResultCode_user_2eproto.base);
+  errmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  errcode_ = 0;
 }
 
 ResultCode::~ResultCode() {
@@ -175,6 +177,7 @@ ResultCode::~ResultCode() {
 }
 
 void ResultCode::SharedDtor() {
+  errmsg_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void ResultCode::SetCachedSize(int size) const {
@@ -192,9 +195,8 @@ void ResultCode::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&errcode_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&errmsg_) -
-      reinterpret_cast<char*>(&errcode_)) + sizeof(errmsg_));
+  errmsg_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  errcode_ = 0;
   _internal_metadata_.Clear();
 }
 
@@ -212,10 +214,12 @@ const char* ResultCode::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 errmsg = 2;
+      // string errmsg = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          errmsg_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_errmsg();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "fixbug.ResultCode.errmsg"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -251,10 +255,14 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_errcode(), target);
   }
 
-  // int32 errmsg = 2;
-  if (this->errmsg() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_errmsg(), target);
+  // string errmsg = 2;
+  if (this->errmsg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_errmsg().data(), static_cast<int>(this->_internal_errmsg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "fixbug.ResultCode.errmsg");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_errmsg(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -273,18 +281,18 @@ size_t ResultCode::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // string errmsg = 2;
+  if (this->errmsg().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_errmsg());
+  }
+
   // int32 errcode = 1;
   if (this->errcode() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_errcode());
-  }
-
-  // int32 errmsg = 2;
-  if (this->errmsg() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_errmsg());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -318,11 +326,12 @@ void ResultCode::MergeFrom(const ResultCode& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.errmsg().size() > 0) {
+
+    errmsg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.errmsg_);
+  }
   if (from.errcode() != 0) {
     _internal_set_errcode(from._internal_errcode());
-  }
-  if (from.errmsg() != 0) {
-    _internal_set_errmsg(from._internal_errmsg());
   }
 }
 
@@ -347,8 +356,9 @@ bool ResultCode::IsInitialized() const {
 void ResultCode::InternalSwap(ResultCode* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  errmsg_.Swap(&other->errmsg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(errcode_, other->errcode_);
-  swap(errmsg_, other->errmsg_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ResultCode::GetMetadata() const {

@@ -86,7 +86,7 @@ example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_abs.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/cstdio /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/bits/stdio_lim.h \
- /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/cerrno /usr/include/errno.h \
  /usr/include/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \

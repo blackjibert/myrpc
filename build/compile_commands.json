@@ -1,12 +1,12 @@
 [
 {
   "directory": "/home/zhj/myrpc/build/example/callee",
-  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src -I/home/zhj/myrpc/example -g -o CMakeFiles/provider.dir/userservice.cc.o -c /home/zhj/myrpc/example/callee/userservice.cc",
+  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/provider.dir/userservice.cc.o -c /home/zhj/myrpc/example/callee/userservice.cc",
   "file": "/home/zhj/myrpc/example/callee/userservice.cc"
 },
 {
   "directory": "/home/zhj/myrpc/build/example/callee",
-  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src -I/home/zhj/myrpc/example -g -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/zhj/myrpc/example/user.pb.cc",
+  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/zhj/myrpc/example/user.pb.cc",
   "file": "/home/zhj/myrpc/example/user.pb.cc"
 }
 ]

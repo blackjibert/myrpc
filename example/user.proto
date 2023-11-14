@@ -7,7 +7,7 @@ option cc_generic_services = true;
 message ResultCode
 {
     int32 errcode=1;
-    int32 errmsg=2;
+    string errmsg=2;
 }
 
 message LoginRequest

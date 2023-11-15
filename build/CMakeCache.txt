@@ -209,13 +209,13 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-myrpc_BINARY_DIR:STATIC=/home/zhj/myrpc/build/src
+myrpc_BINARY_DIR:STATIC=/home/zhj/myrpc/build
 
 //Value Computed by CMake
-myrpc_IS_TOP_LEVEL:STATIC=OFF
+myrpc_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-myrpc_SOURCE_DIR:STATIC=/home/zhj/myrpc/src
+myrpc_SOURCE_DIR:STATIC=/home/zhj/myrpc
 
 
 ########################

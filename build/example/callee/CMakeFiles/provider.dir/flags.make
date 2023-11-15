@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zhj/myrpc/src -I/home/zhj/myrpc/example
+CXX_INCLUDES = -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example
 
 CXX_FLAGS = -g -O3 -DNDEBUG
 

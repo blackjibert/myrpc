@@ -1131,7 +1131,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/zhj/myrpc/build/src"
+			"value" : "/home/zhj/myrpc/build"
 		},
 		{
 			"name" : "myrpc_IS_TOP_LEVEL",
@@ -1143,7 +1143,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "myrpc_SOURCE_DIR",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/zhj/myrpc/src"
+			"value" : "/home/zhj/myrpc"
 		}
 	],
 	"kind" : "cache",

@@ -1,5 +1,20 @@
 [
 {
+  "directory": "/home/zhj/myrpc/build/src",
+  "command": "/usr/bin/g++ -Dmprpc_EXPORTS -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -fPIC -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/zhj/myrpc/src/mprpcapplication.cc",
+  "file": "/home/zhj/myrpc/src/mprpcapplication.cc"
+},
+{
+  "directory": "/home/zhj/myrpc/build/src",
+  "command": "/usr/bin/g++ -Dmprpc_EXPORTS -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -fPIC -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/zhj/myrpc/src/mprpcconfig.cc",
+  "file": "/home/zhj/myrpc/src/mprpcconfig.cc"
+},
+{
+  "directory": "/home/zhj/myrpc/build/src",
+  "command": "/usr/bin/g++ -Dmprpc_EXPORTS -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -fPIC -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/zhj/myrpc/src/rpcprovider.cc",
+  "file": "/home/zhj/myrpc/src/rpcprovider.cc"
+},
+{
   "directory": "/home/zhj/myrpc/build/example/callee",
   "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/provider.dir/userservice.cc.o -c /home/zhj/myrpc/example/callee/userservice.cc",
   "file": "/home/zhj/myrpc/example/callee/userservice.cc"

@@ -52,7 +52,7 @@ int main(int argc, char **argv)
     UserService us;
     // us.Login("xxx", "xxx");
     // return 0;
-    // 调用框架的初始化操作
+    // 调用框架的初始化操作 provider -i config.conf
     MprpcApplication::init(argc, argv);
 
     // rpc是一个rpc网络服务对象。把UserService对象发布到rpc节点上

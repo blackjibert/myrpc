@@ -3,6 +3,9 @@
         "iostream": "cpp",
         "string": "cpp",
         "ostream": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "unordered_map": "cpp"
     }
 }

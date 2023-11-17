@@ -1,5 +1,6 @@
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /home/zhj/myrpc/src/rpcprovider.cc /usr/include/stdc-predef.h \
+ /home/zhj/myrpc/src/include/rpcprovider.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/string \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -91,10 +92,74 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/include/asm-generic/errno-base.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/functional_hash.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/basic_string.tcc \
- /home/zhj/myrpc/src/include/rpcprovider.h \
- /usr/local/include/google/protobuf/service.h \
- /usr/local/include/google/protobuf/stubs/callback.h \
- /usr/local/include/google/protobuf/stubs/macros.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/unordered_map \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/utility \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_relops.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/tuple \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/array \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/stdexcept \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/uses_allocator.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/invoke.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ext/aligned_buffer.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/hashtable.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/hashtable_policy.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/unordered_map.h \
+ /usr/local/include/google/protobuf/descriptor.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/memory \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_construct.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_uninitialized.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tempbuf.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_raw_storage_iter.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ext/concurrence.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/unique_ptr.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/shared_ptr.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/shared_ptr_base.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/allocated_ptr.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/refwrap.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/shared_ptr_atomic.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_base.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_lockfree_defines.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/backward/auto_ptr.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/set \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tree.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_set.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_multiset.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/vector \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_vector.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_bvector.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/vector.tcc \
+ /usr/local/include/google/protobuf/stubs/common.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/algorithm \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_algo.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/algorithmfwd.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_heap.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/uniform_int_dist.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/limits \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ostream \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ios \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/ios_base.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_classes.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_classes.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/system_error \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/error_constants.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/streambuf \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/streambuf.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/basic_ios.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_facets.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/cwctype \
+ /usr/include/wctype.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/ctype_base.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/streambuf_iterator.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/ctype_inline.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_facets.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/basic_ios.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/ostream.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/istream \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/istream.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/map \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_map.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_multimap.h \
  /usr/local/include/google/protobuf/stubs/port.h /usr/include/assert.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/stdlib.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/cstddef \
@@ -114,69 +179,17 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/include/asm/param.h /usr/include/asm-generic/param.h \
  /usr/include/byteswap.h \
  /usr/local/include/google/protobuf/port_undef.inc \
- /usr/local/include/google/protobuf/stubs/common.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/algorithm \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/utility \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_relops.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_algo.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/algorithmfwd.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_heap.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tempbuf.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_construct.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/uniform_int_dist.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/limits \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/ostream \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/ios \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/ios_base.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_classes.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_classes.tcc \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/system_error \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/error_constants.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/stdexcept \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/streambuf \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/streambuf.tcc \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/basic_ios.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_facets.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/cwctype \
- /usr/include/wctype.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/ctype_base.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/streambuf_iterator.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/ctype_inline.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_facets.tcc \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/basic_ios.tcc \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/ostream.tcc \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/istream \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/istream.tcc \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/map \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tree.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/ext/aligned_buffer.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_map.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/tuple \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/array \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/uses_allocator.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/invoke.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_multimap.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/memory \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_uninitialized.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_raw_storage_iter.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/ext/concurrence.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/unique_ptr.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/shared_ptr.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/shared_ptr_base.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/allocated_ptr.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/refwrap.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/shared_ptr_atomic.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_base.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_lockfree_defines.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/backward/auto_ptr.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/set \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_set.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_multiset.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/vector \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_vector.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_bvector.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/vector.tcc \
+ /usr/local/include/google/protobuf/stubs/macros.h \
+ /usr/local/include/google/protobuf/stubs/mutex.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/chrono \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ratio \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ctime \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
+ /usr/local/include/google/protobuf/stubs/once.h \
+ /usr/local/include/google/protobuf/service.h \
+ /usr/local/include/google/protobuf/stubs/callback.h \
  /usr/include/muduo/net/TcpServer.h /usr/include/muduo/base/Atomic.h \
  /usr/include/muduo/base/noncopyable.h /usr/include/muduo/base/Types.h \
  /usr/include/muduo/net/TcpConnection.h \
@@ -250,8 +263,4 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/include/muduo/base/Mutex.h /usr/include/muduo/base/CurrentThread.h \
  /usr/include/muduo/net/TimerId.h \
  /home/zhj/myrpc/src/include/mprpcapplication.h \
- /home/zhj/myrpc/src/include/mprpcconfig.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/unordered_map \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/hashtable.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/hashtable_policy.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/unordered_map.h
+ /home/zhj/myrpc/src/include/mprpcconfig.h

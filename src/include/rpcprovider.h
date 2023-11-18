@@ -9,7 +9,6 @@
 #include <muduo/net/InetAddress.h>
 #include<muduo/net/TcpConnection.h>
 
-
 //框架提供了专门发布rpc服务的网络对象类
 class RpcProvider
 {
@@ -36,7 +35,9 @@ private:
 
     //新的socket连接回调
     void onConnection(const muduo::net::TcpConnectionPtr&);
-
+    //已建立连接用户的读写事件回调
     void onMessage(const muduo::net::TcpConnectionPtr&, muduo::net::Buffer*, muduo::Timestamp);
 
+    //Closure的回调操作, 用于序列化rpc的响应和网络发送
+    void SendRpcResponse(const muduo::net::TcpConnectionPtr&, google::protobuf::Message*);
 };

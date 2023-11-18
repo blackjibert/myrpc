@@ -6,6 +6,7 @@
         "functional": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "*.tcc": "cpp"
     }
 }

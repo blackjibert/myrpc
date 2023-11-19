@@ -264,7 +264,7 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/include/muduo/net/TimerId.h \
  /home/zhj/myrpc/src/include/mprpcapplication.h \
  /home/zhj/myrpc/src/include/mprpcconfig.h \
- /home/zhj/myrpc/src/rpcheader.pb.h \
+ /home/zhj/myrpc/src/include/rpcheader.pb.h \
  /usr/local/include/google/protobuf/io/coded_stream.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/climits \
  /usr/local/include/google/protobuf/stubs/logging.h \

@@ -1,6 +1,6 @@
 src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o: \
  /home/zhj/myrpc/src/rpcheader.pb.cc /usr/include/stdc-predef.h \
- /home/zhj/myrpc/src/rpcheader.pb.h \
+ /home/zhj/myrpc/src/include/rpcheader.pb.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/limits \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

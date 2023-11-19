@@ -20,6 +20,11 @@
   "file": "/home/zhj/myrpc/src/rpcprovider.cc"
 },
 {
+  "directory": "/home/zhj/myrpc/build/src",
+  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/zhj/myrpc/src/mprpcchannel.cc",
+  "file": "/home/zhj/myrpc/src/mprpcchannel.cc"
+},
+{
   "directory": "/home/zhj/myrpc/build/example/callee",
   "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/provider.dir/userservice.cc.o -c /home/zhj/myrpc/example/callee/userservice.cc",
   "file": "/home/zhj/myrpc/example/callee/userservice.cc"
@@ -27,6 +32,16 @@
 {
   "directory": "/home/zhj/myrpc/build/example/callee",
   "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/zhj/myrpc/example/user.pb.cc",
+  "file": "/home/zhj/myrpc/example/user.pb.cc"
+},
+{
+  "directory": "/home/zhj/myrpc/build/example/caller",
+  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/consumer.dir/calluserservice.cc.o -c /home/zhj/myrpc/example/caller/calluserservice.cc",
+  "file": "/home/zhj/myrpc/example/caller/calluserservice.cc"
+},
+{
+  "directory": "/home/zhj/myrpc/build/example/caller",
+  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/zhj/myrpc/example/user.pb.cc",
   "file": "/home/zhj/myrpc/example/user.pb.cc"
 }
 ]

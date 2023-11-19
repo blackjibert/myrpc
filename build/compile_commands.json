@@ -26,22 +26,22 @@
 },
 {
   "directory": "/home/zhj/myrpc/build/example/callee",
-  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/provider.dir/userservice.cc.o -c /home/zhj/myrpc/example/callee/userservice.cc",
-  "file": "/home/zhj/myrpc/example/callee/userservice.cc"
+  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/zhj/myrpc/example/callee/friendservice.cc",
+  "file": "/home/zhj/myrpc/example/callee/friendservice.cc"
 },
 {
   "directory": "/home/zhj/myrpc/build/example/callee",
-  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/zhj/myrpc/example/user.pb.cc",
-  "file": "/home/zhj/myrpc/example/user.pb.cc"
+  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/provider.dir/__/friend.pb.cc.o -c /home/zhj/myrpc/example/friend.pb.cc",
+  "file": "/home/zhj/myrpc/example/friend.pb.cc"
 },
 {
   "directory": "/home/zhj/myrpc/build/example/caller",
-  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/consumer.dir/calluserservice.cc.o -c /home/zhj/myrpc/example/caller/calluserservice.cc",
-  "file": "/home/zhj/myrpc/example/caller/calluserservice.cc"
+  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/consumer.dir/callfriendservice.cc.o -c /home/zhj/myrpc/example/caller/callfriendservice.cc",
+  "file": "/home/zhj/myrpc/example/caller/callfriendservice.cc"
 },
 {
   "directory": "/home/zhj/myrpc/build/example/caller",
-  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/zhj/myrpc/example/user.pb.cc",
-  "file": "/home/zhj/myrpc/example/user.pb.cc"
+  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/zhj/myrpc/example/friend.pb.cc",
+  "file": "/home/zhj/myrpc/example/friend.pb.cc"
 }
 ]

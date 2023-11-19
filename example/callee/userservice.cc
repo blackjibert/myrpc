@@ -16,6 +16,12 @@ public:
         std::cout << "name:" << name << " password:" << pw << std::endl;
         return true;
     }
+    bool Register(uint32_t id, std::string name, std::string pw)
+    {
+        std::cout << "doing local service:register" << std::endl;
+        std::cout <<"id: " << id<< " name:" << name << " password: " << pw << std::endl;
+        return true;
+    }
 
     /*
         重写基类UserServiceRpc的虚函数，都是框架直接调用的
@@ -44,6 +50,26 @@ public:
         // 调用回调操作,执行响应消息的序列化和网络发送（都是由框架完成）
         done->Run();
     }
+
+    void Register(::google::protobuf::RpcController* controller,
+                       const ::fixbug::RegisterRequest* request,
+                       ::fixbug::RegisterResponse* response,
+                       ::google::protobuf::Closure* done)
+    {
+        //1
+        uint32_t id = request->id();
+        std::string name = request->name();
+        std::string pwd = request->pwd();
+        //2
+        bool ret = Register(id, name, pwd);
+        //3
+        response->mutable_result()->set_errcode(0);
+        response->mutable_result()->set_errmsg("");
+        response->set_success(ret);
+        //4
+        done->Run();
+    }
+    
 };
 
 int main(int argc, char** argv)

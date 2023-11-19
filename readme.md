@@ -9,3 +9,17 @@
 
 ## v3.6.0
 - 新建caller,实现RpcChannel的调用过程, Rpc方法的调用过程
+
+
+## 调试
+- [zhj@localhost bin]$ ./provider  -i test.conf 
+- [zhj@localhost bin]$ ./consumer -i test.conf
+
+### bug
+- request parse error! content:
+- std::string response_str(recv_buf, 0, recv_size); //bug出现问题, recv_buf中遇到\0后面的数据就存不下来, 导致反序列化失败  
+
+## 编译
+- protoc user.proto --cpp_out=./
+
+

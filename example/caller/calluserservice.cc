@@ -2,6 +2,7 @@
 #include "mprpcapplication.h" //cmake已经告诉如何查找头文件
 #include "../user.pb.h"
 #include "mprpcchannel.h"
+#include "mprpccontroller.h"
 
 int main(int argc, char** argv)
 {   
@@ -17,6 +18,7 @@ int main(int argc, char** argv)
     //rpc方法的响应
     fixbug::LoginResponse response;
     //发起rpc方法的调用 同步的rpc调用过程 MprpcChannel::callMethod()方法调用
+    // MprpcController controller;
     stub.Login(nullptr, &request, &response, nullptr);//RpcChannel->RpcChannel::callMethod 集中来做所有rpc方法调用的参数序列化和网络发送
     
     //一次调用完成, 读调用的结果

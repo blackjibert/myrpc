@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "mprpcconfig.h"
+#include "include/mprpcconfig.h"
 
 // 负责解析加载配置文件
 void MprpcConfig::LoadConfigFile(const char *config_file)

@@ -11,6 +11,7 @@
         "fstream": "cpp",
         "*.inc": "cpp",
         "condition_variable": "cpp",
-        "mutex": "cpp"
+        "mutex": "cpp",
+        "thread": "cpp"
     }
 }

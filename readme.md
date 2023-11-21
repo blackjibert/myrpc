@@ -22,13 +22,24 @@
 ## v5.0.0
 - 日志系统设计, 以及日志缓冲队列, 下一步进行集成src中
 
+## v5.1.0
+- 日志模块集成到rpcprovider
+
+## v5.2.0
+- 把日志模块集成到rpcprovider,可以继续扩展
+
+## v6.0.0
+- 封装zookeeper的客户端类zookeeperutil.cc
+
 ## 调试
 - [zhj@localhost bin]$ ./provider  -i test.conf 
 - [zhj@localhost bin]$ ./consumer -i test.conf
 
 ### bug
-- request parse error! content:
-- std::string response_str(recv_buf, 0, recv_size); //bug出现问题, recv_buf中遇到\0后面的数据就存不下来, 导致反序列化失败  
+- 1. request parse error! content:
+- 2.std::string response_str(recv_buf, 0, recv_size); //bug出现问题, recv_buf中遇到\0后面的数据就存不下来, 导致反序列化失败 
+- 3.[zhj@localhost bin]$ ./zookertest 
+./zookertest: error while loading shared libraries: libzookeeper_mt.so.2: cannot open shared object file: No such file or directory 
 
 ## 日志模块
 ![Alt text](pic/image.png)

@@ -304,4 +304,12 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/local/include/google/protobuf/generated_enum_reflection.h \
  /usr/local/include/google/protobuf/message.h \
  /usr/local/include/google/protobuf/extension_set.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert \
+ /home/zhj/myrpc/src/include/logger.h \
+ /home/zhj/myrpc/src/include/lockqueue.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/queue \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/deque \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_deque.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/deque.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_queue.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/condition_variable

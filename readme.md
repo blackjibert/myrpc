@@ -15,8 +15,13 @@
 
 ## v4.0.0
 - 添加应用示例,包括添加register方法,以及添加新的服务friendservice
+
 ## v4.5.0
 - 实现RpcController控制模块的抽象类,输出错误信息
+
+## v5.0.0
+- 日志系统设计, 以及日志缓冲队列, 下一步进行集成src中
+
 ## 调试
 - [zhj@localhost bin]$ ./provider  -i test.conf 
 - [zhj@localhost bin]$ ./consumer -i test.conf

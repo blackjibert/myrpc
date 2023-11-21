@@ -1,0 +1,2 @@
+9:25:57=>first log message9:25:57=>/home/zhj/myrpc/example/caller/callfriendservice.cc:main:119:28:47=>first log message9:28:47=>/home/zhj/myrpc/example/caller/callfriendservice.cc:main:119:29:18=>first log message
+9:29:18=>/home/zhj/myrpc/example/caller/callfriendservice.cc:main:11

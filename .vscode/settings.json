@@ -9,6 +9,8 @@
         "unordered_map": "cpp",
         "*.tcc": "cpp",
         "fstream": "cpp",
-        "*.inc": "cpp"
+        "*.inc": "cpp",
+        "condition_variable": "cpp",
+        "mutex": "cpp"
     }
 }

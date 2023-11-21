@@ -30,6 +30,11 @@
   "file": "/home/zhj/myrpc/src/mprpccontroller.cc"
 },
 {
+  "directory": "/home/zhj/myrpc/build/src",
+  "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/mprpc.dir/logger.cc.o -c /home/zhj/myrpc/src/logger.cc",
+  "file": "/home/zhj/myrpc/src/logger.cc"
+},
+{
   "directory": "/home/zhj/myrpc/build/example/callee",
   "command": "/usr/bin/g++  -I/home/zhj/myrpc/src/include -I/home/zhj/myrpc/example -g -O3 -DNDEBUG -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/zhj/myrpc/example/callee/friendservice.cc",
   "file": "/home/zhj/myrpc/example/callee/friendservice.cc"

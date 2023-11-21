@@ -15,7 +15,8 @@
 
 ## v4.0.0
 - 添加应用示例,包括添加register方法,以及添加新的服务friendservice
-
+## v4.5.0
+- 实现RpcController控制模块的抽象类,输出错误信息
 ## 调试
 - [zhj@localhost bin]$ ./provider  -i test.conf 
 - [zhj@localhost bin]$ ./consumer -i test.conf
@@ -24,6 +25,8 @@
 - request parse error! content:
 - std::string response_str(recv_buf, 0, recv_size); //bug出现问题, recv_buf中遇到\0后面的数据就存不下来, 导致反序列化失败  
 
+## 日志模块
+![Alt text](pic/image.png)
 ## 编译
 - protoc user.proto --cpp_out=./
 

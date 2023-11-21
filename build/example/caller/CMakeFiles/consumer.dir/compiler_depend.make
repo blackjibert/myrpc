@@ -547,8 +547,28 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: ../example/caller
   /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert \
   /usr/local/include/google/protobuf/service.h \
   ../src/include/mprpcchannel.h \
-  ../src/include/mprpccontroller.h
+  ../src/include/mprpccontroller.h \
+  ../src/include/logger.h \
+  ../src/include/lockqueue.h \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/queue \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/deque \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_deque.h \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/deque.tcc \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_queue.h \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/condition_variable
 
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/condition_variable:
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_queue.h:
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_deque.h:
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/deque:
+
+../src/include/lockqueue.h:
+
+../src/include/logger.h:
 
 ../src/include/mprpcchannel.h:
 
@@ -731,6 +751,8 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: ../example/caller
 /opt/rh/devtoolset-7/root/usr/include/c++/7/istream:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/predefined_ops.h:
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/queue:
 
 /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/include/limits.h:
 
@@ -923,6 +945,8 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: ../example/caller
 /usr/local/include/google/protobuf/stubs/common.h:
 
 /usr/include/bits/stdio.h:
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/bits/deque.tcc:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/uniform_int_dist.h:
 

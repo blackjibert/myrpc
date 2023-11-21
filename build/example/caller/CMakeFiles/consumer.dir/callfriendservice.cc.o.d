@@ -238,4 +238,12 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert \
  /usr/local/include/google/protobuf/service.h \
  /home/zhj/myrpc/src/include/mprpcchannel.h \
- /home/zhj/myrpc/src/include/mprpccontroller.h
+ /home/zhj/myrpc/src/include/mprpccontroller.h \
+ /home/zhj/myrpc/src/include/logger.h \
+ /home/zhj/myrpc/src/include/lockqueue.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/queue \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/deque \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_deque.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/deque.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_queue.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/condition_variable

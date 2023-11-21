@@ -3,9 +3,13 @@
 #include "../friend.pb.h"
 #include "mprpcchannel.h"
 #include "mprpccontroller.h"
+#include "logger.h"
 
 int main(int argc, char **argv)
-{
+{   
+    LOG_INFO("first log message");
+    LOG_ERROR("%s:%s:%d",__FILE__, __FUNCTION__, __LINE__);
+
     // 整个程序启动以后, 想使用mprpc框架来使用rpc服务调用, 一定需要先调用框架的的初始化函数(初始化一次)
     MprpcApplication::init(argc, argv);
 

@@ -25,7 +25,7 @@ Logger::Logger()
             std::string msg = m_lckQue.Pop();
             
             char time_buf[128];
-            sprintf(time_buf,"%d:%d:%d =>[%s]", 
+            sprintf(time_buf,"%d:%d:%d => [%s]", 
                                 nowtm->tm_hour, 
                                 nowtm->tm_min, 
                                 nowtm->tm_sec,

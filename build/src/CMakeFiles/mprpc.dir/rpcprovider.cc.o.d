@@ -312,4 +312,10 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_deque.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/deque.tcc \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_queue.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/condition_variable
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/condition_variable \
+ /home/zhj/myrpc/src/include/zookeeperutil.h /usr/include/semaphore.h \
+ /usr/include/bits/semaphore.h /usr/local/include/zookeeper/zookeeper.h \
+ /usr/include/sys/time.h /usr/local/include/zookeeper/proto.h \
+ /usr/local/include/zookeeper/zookeeper_version.h \
+ /usr/local/include/zookeeper/recordio.h \
+ /usr/local/include/zookeeper/zookeeper.jute.h

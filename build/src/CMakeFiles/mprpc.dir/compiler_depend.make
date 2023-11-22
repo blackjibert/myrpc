@@ -1636,7 +1636,16 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: ../src/rpcprovider.cc \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_deque.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/deque.tcc \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_queue.h \
-  /opt/rh/devtoolset-7/root/usr/include/c++/7/condition_variable
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/condition_variable \
+  ../src/include/zookeeperutil.h \
+  /usr/include/semaphore.h \
+  /usr/include/bits/semaphore.h \
+  /usr/local/include/zookeeper/zookeeper.h \
+  /usr/include/sys/time.h \
+  /usr/local/include/zookeeper/proto.h \
+  /usr/local/include/zookeeper/zookeeper_version.h \
+  /usr/local/include/zookeeper/recordio.h \
+  /usr/local/include/zookeeper/zookeeper.jute.h
 
 src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/zookeeperutil.cc \
   /usr/include/stdc-predef.h \
@@ -1812,11 +1821,11 @@ src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/zookeeperutil.cc \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/istream.tcc
 
 
+../src/zookeeperutil.cc:
+
 /usr/local/include/zookeeper/zookeeper.h:
 
 /usr/include/bits/semaphore.h:
-
-../src/zookeeperutil.cc:
 
 /usr/include/muduo/net/EventLoop.h:
 

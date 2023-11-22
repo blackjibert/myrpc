@@ -82,7 +82,7 @@ int main(int argc, char** argv)
 
     // rpc是一个rpc网络服务对象。把UserService对象发布到rpc节点上
     RpcProvider provider; //数据的序列化和反序列化以及网络数据的收发
-    provider.NotifyService(new UserService()); 
+    provider.NotifyService(new UserService());   //注册服务
 
     // 启动一个rpc服务发布节点，Run以后，进入阻塞状态，等待远程的rpc调用请求。
     provider.Run();

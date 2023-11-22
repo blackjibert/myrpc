@@ -244,4 +244,10 @@ src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o: \
  /usr/include/asm-generic/sockios.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/bits/in.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/getopt.h
+ /usr/include/bits/confname.h /usr/include/getopt.h \
+ /home/zhj/myrpc/src/include/zookeeperutil.h /usr/include/semaphore.h \
+ /usr/include/bits/semaphore.h /usr/local/include/zookeeper/zookeeper.h \
+ /usr/include/sys/time.h /usr/local/include/zookeeper/proto.h \
+ /usr/local/include/zookeeper/zookeeper_version.h \
+ /usr/local/include/zookeeper/recordio.h \
+ /usr/local/include/zookeeper/zookeeper.jute.h

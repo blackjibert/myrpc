@@ -5,7 +5,7 @@
 
 Logger::Logger()
 {
-    //专门写日志线程
+    //启动专门的写日志线程
     std::thread writeLogTask([&](){
         for(;;)
         {
@@ -13,15 +13,18 @@ Logger::Logger()
             time_t now = time(nullptr);
             tm* nowtm = localtime(&now);
 
+            //创建文件
             char file_name[128];
             sprintf(file_name, "%d-%d-%d-log.txt",nowtm->tm_year+1900, nowtm->tm_mon+1, nowtm->tm_mday);
-
+            
+            //打开文件
             FILE* pf = fopen(file_name, "a+");
             if(pf == nullptr)
             {
                 std::cout<< "logger file: " <<file_name<<"open error!" <<std::endl;
                 exit(EXIT_FAILURE);
             }
+            //从缓冲区队列中获取信息
             std::string msg = m_lckQue.Pop();
             
             char time_buf[128];
@@ -32,7 +35,7 @@ Logger::Logger()
                                 (m_loglevel == INFO ? "info":"error"));
             msg.insert(0,time_buf);
             msg.append("\n");
-
+            
             fputs(msg.c_str(), pf);
             fclose(pf);
 
@@ -41,17 +44,21 @@ Logger::Logger()
     //设置分离线程, 守护线程
     writeLogTask.detach();
 }
+
+//获取日志的单例
 Logger& Logger::GetInstance()
 {
     static Logger logger;
     return logger;
 }
+
 //设置日志级别
 void Logger::SetLogLevel(LogLevel level)
 {
     m_loglevel=level;
 }
-//写日志, 把日志信息写入lockqueue缓冲区中
+
+//写日志, 把日志信息写入lockqueue缓冲区，放入队列中
 void Logger::Log(std::string msg)
 {
     m_lckQue.Push(msg);

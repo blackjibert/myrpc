@@ -632,7 +632,16 @@ src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o: ../src/mprpcchannel.cc \
   /usr/include/bits/posix_opt.h \
   /usr/include/bits/environments.h \
   /usr/include/bits/confname.h \
-  /usr/include/getopt.h
+  /usr/include/getopt.h \
+  ../src/include/zookeeperutil.h \
+  /usr/include/semaphore.h \
+  /usr/include/bits/semaphore.h \
+  /usr/local/include/zookeeper/zookeeper.h \
+  /usr/include/sys/time.h \
+  /usr/local/include/zookeeper/proto.h \
+  /usr/local/include/zookeeper/zookeeper_version.h \
+  /usr/local/include/zookeeper/recordio.h \
+  /usr/local/include/zookeeper/zookeeper.jute.h
 
 src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o: ../src/mprpcconfig.cc \
   /usr/include/stdc-predef.h \
@@ -1823,10 +1832,6 @@ src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/zookeeperutil.cc \
 
 ../src/zookeeperutil.cc:
 
-/usr/local/include/zookeeper/zookeeper.h:
-
-/usr/include/bits/semaphore.h:
-
 /usr/include/muduo/net/EventLoop.h:
 
 /usr/local/include/boost/utility/enable_if.hpp:
@@ -1837,19 +1842,11 @@ src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/zookeeperutil.cc \
 
 /usr/local/include/boost/version.hpp:
 
-/usr/local/include/zookeeper/zookeeper.jute.h:
-
-/usr/local/include/boost/type_traits/detail/config.hpp:
-
 /usr/local/include/boost/type_traits/decay.hpp:
 
 /usr/local/include/boost/type_traits/remove_reference.hpp:
 
 /usr/local/include/boost/type_traits/is_rvalue_reference.hpp:
-
-/usr/include/sys/time.h:
-
-/usr/local/include/boost/type_traits/is_reference.hpp:
 
 /usr/local/include/boost/type_traits/conditional.hpp:
 
@@ -1903,11 +1900,23 @@ src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/zookeeperutil.cc \
 
 ../src/rpcprovider.cc:
 
+/usr/local/include/boost/type_traits/detail/config.hpp:
+
+/usr/local/include/zookeeper/zookeeper.jute.h:
+
+/usr/local/include/boost/type_traits/is_reference.hpp:
+
+/usr/include/sys/time.h:
+
+/usr/local/include/zookeeper/zookeeper.h:
+
+/usr/include/bits/semaphore.h:
+
 /usr/include/netinet/in.h:
 
-/usr/local/include/zookeeper/zookeeper_version.h:
-
 /usr/local/include/boost/type_index/type_index_facade.hpp:
+
+/usr/local/include/zookeeper/zookeeper_version.h:
 
 /usr/include/asm/sockios.h:
 

@@ -33,6 +33,8 @@
 
 ## v6.5.0
 - 项目集成zookeeper, 在服务提供方rpcprovider.cc和调用方mprpcchannel.cc分别配置
+## v6.6.0 
+- 2023.11.25修改日志模块
 
 ## 调试
 - [zhj@localhost bin]$ ./provider  -i test.conf 
@@ -55,7 +57,7 @@
 - ldconfig命令的用途，主要是在默认搜寻目录(/lib和/usr/lib)以及动态库配置文件/etc/ld.so.conf内所列的目录下，搜索出可共享的动态链接库(格式如lib*.so*)，然后创建出动态装入程序(ld.so)所需的连接和缓存文件，缓存文件默认为/etc/ld.so.cache，此文件保存已排好序的动态链接库名字列表。
 
 ## 日志模块
-![Alt text](pic/image.png)
+![Alt text](pic/logger.png)
 ## 编译
 - protoc user.proto --cpp_out=./
 

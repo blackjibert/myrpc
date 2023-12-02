@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 project(mprpc)
 
 # 配置编译选项
-set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} -g)
+set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} -g) #-g是可调试
 
 #生成debug版本，可以进行gdb调试
 set(CMAKE_BUILD_TYPE, "Debug")

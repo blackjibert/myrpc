@@ -5,8 +5,9 @@
 
 Logger::Logger()
 {
-    //启动专门的写日志线程
-    std::thread writeLogTask([&](){
+    // 启动专门的写日志线程
+    std::thread writeLogTask([&]()
+                             {
         for(;;)
         {
             //获取当前的日期，然后获取日志信息，写入相应的文件当中 a+ 
@@ -39,26 +40,25 @@ Logger::Logger()
             fputs(msg.c_str(), pf);
             fclose(pf);
 
-        }
-    });
-    //设置分离线程, 守护线程
+        } });
+    // 设置分离线程, 守护线程
     writeLogTask.detach();
 }
 
-//获取日志的单例
-Logger& Logger::GetInstance()
+// 获取日志的单例
+Logger &Logger::GetInstance()
 {
     static Logger logger;
     return logger;
 }
 
-//设置日志级别
+// 设置日志级别
 void Logger::SetLogLevel(LogLevel level)
 {
-    m_loglevel=level;
+    m_loglevel = level;
 }
 
-//写日志, 把日志信息写入lockqueue缓冲区，放入队列中
+// 写日志, 把日志信息写入lockqueue缓冲区，放入队列中
 void Logger::Log(std::string msg)
 {
     m_lckQue.Push(msg);
